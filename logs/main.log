@@ -14,3 +14,9 @@
 9152 200 - GET /posts
 9152 200 - GET /posts
 9152 200 - GET /
+70190 404 - GET /
+70190 404 - GET /favicon.ico
+70190 404 - GET /v1
+70190 200 - GET /v1/hello
+70190 200 - GET /v1/hello
+71975 200 - GET /v1/hello

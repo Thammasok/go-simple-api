@@ -1,11 +1,10 @@
-package utils
+package server
 
 import (
 	"fmt"
 	"log"
 
 	"go-simple/middleware"
-	"go-simple/server"
 
 	routeHello "go-simple/app/hello"
 	routePost "go-simple/app/post"
@@ -17,7 +16,7 @@ func CreateServer(port int) {
 	// Create Fiber App
 	app := fiber.New(fiber.Config{
 		Prefork:      true,
-		ErrorHandler: server.ErrorHandler,
+		ErrorHandler: ErrorHandler,
 	})
 
 	// Initialize Logger

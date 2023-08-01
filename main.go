@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"go-simple/migrations"
-	"go-simple/utils"
+	"go-simple/server"
 
 	"github.com/gofiber/fiber/v2"
 	_ "github.com/joho/godotenv/autoload"
@@ -19,5 +19,5 @@ func main() {
 
 	port, _ := strconv.Atoi(os.Getenv("APP_PORT"))
 
-	utils.CreateServer(port)
+	server.CreateServer(port)
 }

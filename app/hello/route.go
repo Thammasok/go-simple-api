@@ -7,5 +7,8 @@ import (
 )
 
 func HelloRoutes(app *fiber.App) {
-	app.Get("/", helloControllers.Hello)
+	// Post group
+	helloGroup := app.Group("/v1/hello")
+
+	helloGroup.Get("/", helloControllers.Hello)
 }

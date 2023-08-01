@@ -8,7 +8,7 @@ import (
 
 func PostRoutes(app *fiber.App) {
 	// Post group
-	postGroup := app.Group("/posts")
+	postGroup := app.Group("/v1/posts")
 
 	// List All Posts
 	postGroup.Get("/", postController.Index)
